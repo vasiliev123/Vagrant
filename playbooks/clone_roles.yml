@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    git_repository: 'https://github.com/vasilievpl123/Ansible_roles.git'
+    git_repository: 'https://github.com/vasilievpl123/ansible_roles.git'
     git_branch: 'master'
   tasks:
     - name: Create directory
