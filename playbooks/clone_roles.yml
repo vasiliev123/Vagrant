@@ -3,8 +3,8 @@
   hosts: all
   become: true
   vars:
-    git_repository: 'https://github.com/vasilievpl123/ansible_roles.git'
-    git_branch: 'master'
+    git_repository: 'https://github.com/vasiliev123/ansible_roles.git'
+    git_branch: 'main'
   tasks:
     - name: Create directory
       ansible.builtin.file:

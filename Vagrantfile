@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbooks/clone_roles.yml"
     ansible.extra_vars = {
-      git_repository: "https://github.com/vasilievpl123/ansible_roles.git",
-      git_branch: "master"
+      git_repository: "https://github.com/vasiliev123/ansible_roles.git",
+      git_branch: "main"
     }
   end
  
@@ -27,8 +27,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbooks/infrastructure.yml"
     ansible.extra_vars = {
-      git_repository: "https://github.com/vasilievpl123/Infrastructure.git",
-      git_branch: "master"
+      git_repository: "https://github.com/vasiliev123/Infrastructure.git",
+      git_branch: "main"
     }
   end
 
